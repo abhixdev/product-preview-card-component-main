@@ -25,9 +25,57 @@
     <title>Frontend Mentor | Product preview card component</title>
   </head>
   <body class="bg-Cream">
-    Perfume Gabrielle Essence Eau De Parfum A floral, solar and voluptuous
-    interpretation composed by Olivier Polge, Perfumer-Creator for the House of
-    CHANEL. $149.99 $169.99 Add to Cart
+    <div class="flex h-screen justify-center">
+      <div class="m-5 flex flex-col rounded-2xl bg-white shadow-lg">
+        <!-- Image -->
+        <div class="w-fit">
+          <img
+            class="rounded-t-2xl"
+            src="./images/image-product-mobile.jpg"
+            alt=""
+          />
+        </div>
+        <!-- Content Container -->
+        <div class="content">
+          <div class="m-5 flex flex-col space-y-5">
+            <!-- Category -->
+            <p class="text-Darkgrayishblue text-sm uppercase tracking-[0.3rem]">
+              Perfume
+            </p>
+
+            <!-- Heading -->
+            <h1 class="font-serif text-3xl font-bold leading-none">
+              Gabrielle Essence Eau De Parfum
+            </h1>
+
+            <!-- Descriptions -->
+            <p class="text-sm tracking-wide">
+              A floral, solar and voluptuous interpretation composed by Olivier
+              Polge, Perfumer-Creator for the House of CHANEL.
+            </p>
+
+            <!-- Price -->
+            <div class="flex items-center space-x-4 pt-2">
+              <p
+                class="font-serif text-Darkcyan text-3xl font-bold leading-none"
+              >
+                $149.99
+              </p>
+              <p class="text-Darkgrayishblue text-sm line-through">$169.99</p>
+            </div>
+
+            <!-- Add to cart Button -->
+            <a
+              class="bg-Darkcyan flex items-center justify-center space-x-2 rounded-lg p-3 font-semibold text-white"
+              href="#"
+            >
+              <img src="./images/icon-cart.svg" alt="" />
+              <p class="text-sm">Add to Cart</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Attribution -->
     <div class="text-center text-xs">
